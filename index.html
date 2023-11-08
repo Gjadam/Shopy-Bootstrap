@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>BELLA - OLANJE</title>
 </head>
-<body class="bg-dark m-4 ">
-    <div class="bg-success p-2">with 25%</div>
+
+<body>
+    <!-- Start NavBar Top -->
+    <div class="container-fluid bg-black py-2 ">
+        <div
+            class="owl-carousel owl-carousel-promo owl-loaded owl-drag container d-flex justify-content-center align-items-center text-center text-white text-uppercase">
+            <span class="text-font"><i class="bi bi-truck me-2 "></i> Free Shipping and Returns</span>
+            <span class="text-font"><i class="bi bi-award me-2"></i> 2 Years of Warranty</span>
+            <span class="text-font"><i class="bi bi-shield me-2"></i></i> 30 Days Moneyback Guarantee</span>
+        </div>
+    </div>
+    <!-- End NavBar Top -->
+    <!-- Start NavBar -->
+    <div class="container navbar  m-auto p-3 ">
+        <div class=" text-uppercase d-flex d-md-flex d-none ">
+            <a href="" class="nav-link text-black  fw-bolder  me-3 ">home</a>
+            <a href="" class="nav-link text-black  fw-bolder  me-3">template</a>
+            <a href="" class="nav-link text-black  fw-bolder  me-3">docs</a>
+            <a href="" class="nav-link text-danger fw-bolder  me-3">sale</a>
+        </div>
+        <div class="navbar-brand me-5  ">
+            <img src="./public/images/logo.svg" alt="logo">
+        </div>
+        <div class="d-md-none">
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="d-md-flex d-none  ">
+            <i class="bi bi-globe me-4 "></i>
+            <i class="bi bi-globe me-4 "></i>
+            <i class="bi bi-globe me-4 "></i>
+            <i class="bi bi-globe me-4 "></i>
+            <i class="bi bi-globe me-4 "></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="collapse navbar-collapse d-md-none " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex my-3 " role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- End NavBar -->
+    <!-- Start Header -->
+    <div class="swiper mySwiper header-height">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+                <img src="/public/images/background-1.jpg" class="header-image" alt="image">
+                <div class="header-content text-start ">
+                    <span class="text-white text-opacity-50 text-uppercase fs-6  ">New Collection</span>
+                    <h1 class="text-white ">Casual Dresses</h1>
+                    <a href="" class="btn btn-outline-light rounded-0  mt-2 py-2 px-4 ">Shop Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide position-relative">
+                <img src="/public/images/background-2.jpg" class="header-image" alt="image">
+                <div class="header-content text-start">
+                    <span class="text-white  text-opacity-50 text-uppercase fs-6 ">New Collection</span>
+                    <h1 class="text-white ">Summer is here</h1>
+                    <a href="" class="btn btn-outline-light rounded-0 mt-2 py-2 px-4 ">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
 </body>
+
+
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            loop: true
+        },
+    });
+</script>
+<script src="/js/main.js"></script>
+
 </html>
