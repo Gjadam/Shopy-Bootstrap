@@ -1,2 +1,77 @@
 @import './reset.css';
-@import '../node_modules//bootstrap/dist/css/bootstrap.min.css'
+@import '../node_modules//bootstrap/dist/css/bootstrap.min.css';
+@import "/node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import './fonts.css';
+
+/* Start Default Styles */
+body {
+    margin: 0;
+    font-family: "Lato";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777777;
+    text-align: left;
+    background-color: #fff;
+}
+/* End Default Styles */
+
+/* Start NavBar Top */
+
+.text-font {
+    font-size: 0.8rem;
+}
+
+/* End NavBar Top */
+
+
+/* Start Header */
+
+.header-image {
+    filter:brightness(0.7);
+    -webkit-filter:brightness(0.7);
+}
+
+.header-content {
+    position: absolute;
+    left: 6rem; bottom: 10rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+}
+
+.header-height {
+    height: 80vh !important;
+}
+
+/* End Header */
+
+/* Start Swiper Styles */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* End Swiper Styles */
+
+
+
+  
