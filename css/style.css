@@ -68,9 +68,22 @@ body {
     bottom: 4rem;
 }
 
-
 /* End Cards */
 
+/* Start Top Sellers */
+
+.top-sellers-height {
+    height: 35rem;
+}
+
+.product-content {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 1rem;
+    width: 96%;
+}
+
+/* End Top Sellers */
 
 
 /* Start Swiper Styles */
