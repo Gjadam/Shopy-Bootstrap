@@ -47,6 +47,32 @@ body {
 
 /* End Header */
 
+/* Start Cards */
+
+.card-image-1 {
+    background: url('/public/images/image-2.jpg') no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.card-image-2 {
+    background: url('/public/images/image-3.jpg') no-repeat;
+    background-size: cover;
+    height: 75vh;
+
+}
+
+.card-content-position {
+    position: absolute;
+    left: 4.5rem;
+    bottom: 4rem;
+}
+
+
+/* End Cards */
+
+
+
 /* Start Swiper Styles */
 
 .swiper {
