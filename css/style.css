@@ -28,8 +28,8 @@ body {
 /* Start Header */
 
 .header-image {
-    filter:brightness(0.7);
-    -webkit-filter:brightness(0.7);
+    filter:brightness(0.8);
+    -webkit-filter:brightness(0.8);
 }
 
 .header-content {
