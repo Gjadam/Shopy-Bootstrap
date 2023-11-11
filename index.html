@@ -26,13 +26,14 @@
     <!-- Start NavBar -->
     <div class="container navbar  m-auto p-3 ">
         <div class=" text-uppercase d-flex d-md-flex d-none ">
-            <a href="" class="nav-link text-black  fw-bolder  me-3 ">home</a>
-            <a href="" class="nav-link text-black  fw-bolder  me-3">template</a>
-            <a href="" class="nav-link text-black  fw-bolder  me-3">docs</a>
-            <a href="" class="nav-link text-danger fw-bolder  me-3">sale</a>
+            <a href="/" class="nav-link text-danger  fw-bolder  me-3 ">home</a>
+            <a href="#top-sellers" class="nav-link text-black  fw-bolder  me-3">top sellers</a>
+            <a href="#trending" class="nav-link text-black  fw-bolder  me-3">Trending</a>
         </div>
         <div class="navbar-brand me-5  ">
-            <img src="./public/images/logo.svg" alt="logo">
+            <a href="/">
+                <img src="./public/images/logo.svg" alt="logo">
+            </a>
         </div>
         <div class="d-md-none">
             <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
@@ -63,29 +64,32 @@
         <div class="collapse navbar-collapse d-md-none " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a href="/" class="nav-link text-danger  fw-bolder  me-3  text-uppercase ">home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a href="#top-sellers" class="nav-link text-black  fw-bolder  me-3 text-uppercase ">top sellers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#trending" class="nav-link text-black  fw-bolder  me-3 text-uppercase ">Trending</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Dropdown
+                        More
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Shop</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Favorite Products</a></li>
                     </ul>
                 </li>
             </ul>
             <form class="d-flex my-3 " role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-secondary  " type="submit">Search</button>
             </form>
         </div>
     </div>
@@ -132,7 +136,7 @@
     </div>
     <!-- End Cards -->
     <!-- Start Top Sellers -->
-    <div
+    <div id="top-sellers"
         class="owl-carousel loop owl-carousel-promo owl-loaded owl-drag container-fluid  d-flex justify-content-center align-items-center mt-2">
         <div
             class="top-sellers-height d-flex justify-content-center align-items-center flex-column  text-center text-uppercase ">
@@ -166,7 +170,7 @@
     <!-- End Top Sellers -->
 
     <!-- Start Trending Categories -->
-    <div class="container mt-5  ">
+    <div id="trending" class="container mt-5  ">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div class="">
                 <h6 class="text-secondary ">SHOP BY CATEGORY</h6>
