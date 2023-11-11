@@ -94,7 +94,16 @@ body {
 }
 
 /* End Trending Categories */
+/* Start Footer */
 
+.placeholder-color::placeholder {
+    color: white;
+}
+
+.footer-bottom-bg-color {
+    background-color: rgba(225, 225, 225, 0.1);
+}
+/* End Footer */
 /* Start Swiper Styles */
 
 .swiper {
